@@ -21,9 +21,8 @@ def main():
     UE_BOOM_MAC,
     UE_BOOM_PORT
   ))
-  dev.sendall(b'\x02\x01\xb6')
+  dev.sendall(UE_BOOM_OFF_MSG)
   dev.close()
-
 
 if __name__ == '__main__':
   main()
